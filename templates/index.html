@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            color: #f39c12;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid #f39c12;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .card {
+            background-color: #2c2c2c;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #34495e;
+        }
+
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #f39c12;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+            margin-bottom: 15px;
+        }
+
+        .card .btn {
+            padding: 12px 25px;
+            background-color: #f39c12;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card .btn:hover {
+            background-color: #e67e22;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            color: #f39c12;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Team Tracker</h1>
+        <p>Track your team's progress in real-time</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <h2>Project Status</h2>
+                <p>Current Progress: 75%</p>
+                <p>Deadline: 2 weeks</p>
+                <button class="btn">View Progress</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <h2>Team Members</h2>
+                <p>Active Members: 8</p>
+                <p>On Leave: 2</p>
+                <button class="btn">View Members</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <h2>Upcoming Tasks</h2>
+                <p>Tasks Due in the next 7 Days: 4</p>
+                <p>Team on track to meet deadlines</p>
+                <button class="btn">View Tasks</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <h2>Team Chat</h2>
+                <p>Last Message: "Great progress, team!"</p>
+                <button class="btn">Open Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Team Tracker. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
